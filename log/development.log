@@ -4971,3 +4971,61 @@ Processing by RestaurantsController#show as HTML
 Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.8ms | Allocations: 13774)
 
 
+Started GET "/restaurants" for ::1 at 2021-01-21 14:34:48 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/restaurants/index.html.erb:5
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:5
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1514)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 5665)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.9ms | Allocations: 6056)
+
+
+Started GET "/restaurants/24" for ::1 at 2021-01-21 14:34:51 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:42:in `set_restaurant'
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 24], ["record_type", "Restaurant"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:7
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."restaurant_id" = ?[0m  [["restaurant_id", 24]]
+  ↳ app/views/restaurants/show.html.erb:19
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 70], ["record_type", "Dish"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 71], ["record_type", "Dish"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:26
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 7750)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 11796)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 1.4ms | Allocations: 12762)
+
+
+Started GET "/restaurants/22" for ::1 at 2021-01-21 14:34:54 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:42:in `set_restaurant'
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 22], ["record_type", "Restaurant"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:7
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."restaurant_id" = ?[0m  [["restaurant_id", 22]]
+  ↳ app/views/restaurants/show.html.erb:19
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 64], ["record_type", "Dish"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 65], ["record_type", "Dish"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:26
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 66], ["record_type", "Dish"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/restaurants/show.html.erb:26
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 30.1ms | Allocations: 8780)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.5ms | Allocations: 12826)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 1.6ms | Allocations: 13776)
+
+
