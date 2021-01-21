@@ -1,0 +1,765 @@
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRestaurants (20210114165727)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "rate" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210114165727"]]
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDishes (20210115185559)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "price" float, "restaurant_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_d0358ace74"
+FOREIGN KEY ("restaurant_id")
+  REFERENCES "restaurants" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_dishes_on_restaurant_id" ON "dishes" ("restaurant_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210115185559"]]
+  [1m[36mTRANSACTION (14.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20210121103325)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210121103325"]]
+  [1m[36mTRANSACTION (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-01-21 11:50:34.058816"], ["updated_at", "2021-01-21 11:50:34.058816"]]
+  [1m[36mTRANSACTION (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants"[0m
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 12:55:54 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 17887)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.5ms | Allocations: 20542)
+  
+ActionView::Template::Error (Error: invalid operator in attribute selector for class
+        on line 604:36 of stdin
+>> .no-gutters > .col, .no-gutters > [class * =col-] {
+
+   -----------------------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants"[0m
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 12:58:25 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5001)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.6ms | Allocations: 7657)
+  
+ActionView::Template::Error (Error: invalid operator in attribute selector for class
+        on line 604:36 of stdin
+>> .no-gutters > .col, .no-gutters > [class * =col-] {
+
+   -----------------------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants"[0m
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 12:59:23 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 643)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 5002)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.5ms | Allocations: 7658)
+  
+ActionView::Template::Error (Error: invalid operator in attribute selector for class
+        on line 604:36 of stdin
+>> .no-gutters > .col, .no-gutters > [class * =col-] {
+
+   -----------------------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants"[0m
+  [1m[36mTRANSACTION (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:00:08 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 643)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 833)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 0.8ms | Allocations: 3521)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (7.6ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants"[0m
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:00:46 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 832)
+Completed 200 OK in 20ms (Views: 8.7ms | ActiveRecord: 0.5ms | Allocations: 3520)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.0ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:04:55.478333', '2021-01-21 12:04:55.478333');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:04:55.478333', '2021-01-21 12:04:55.478333')[0m
+  [1m[36mTRANSACTION (16.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:04:59 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3082)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3272)
+Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 5960)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:06:04.425458', '2021-01-21 12:06:04.425458');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:06:04.425458', '2021-01-21 12:06:04.425458')[0m
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:06:08 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3082)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3272)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 5960)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.0ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:15:02.393539', '2021-01-21 12:15:02.393539');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:15:02.393539', '2021-01-21 12:15:02.393539');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:15:02.395645', '2021-01-21 12:15:02.395645');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:15:02.395645', '2021-01-21 12:15:02.395645')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.4ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:15:02.400182', '2021-01-21 12:15:02.400182');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:15:02.400182', '2021-01-21 12:15:02.400182');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:15:02.400231', '2021-01-21 12:15:02.400231');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:15:02.400231', '2021-01-21 12:15:02.400231')[0m
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.7ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants2" for 127.0.0.1 at 2021-01-21 13:15:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants2"):
+  
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:15:07 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2949)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3133)
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 0.8ms | Allocations: 5112)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.1ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:15:28.820695', '2021-01-21 12:15:28.820695');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:15:28.820695', '2021-01-21 12:15:28.820695');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:15:28.823050', '2021-01-21 12:15:28.823050');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:15:28.823050', '2021-01-21 12:15:28.823050')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:15:28.827529', '2021-01-21 12:15:28.827529');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:15:28.827529', '2021-01-21 12:15:28.827529');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:15:28.827583', '2021-01-21 12:15:28.827583');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:15:28.827583', '2021-01-21 12:15:28.827583')[0m
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/restaurants/2" for 127.0.0.1 at 2021-01-21 13:15:33 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.6ms | Allocations: 1472)
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=2):
+  
+app/controllers/restaurants_controller.rb:42:in `set_restaurant'
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:15:33 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2823)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3033)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 4340)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.5ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.6ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:17:54.364693', '2021-01-21 12:17:54.364693');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:17:54.364693', '2021-01-21 12:17:54.364693');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:17:54.366937', '2021-01-21 12:17:54.366937');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:17:54.366937', '2021-01-21 12:17:54.366937')[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:17:54.372349', '2021-01-21 12:17:54.372349');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:17:54.372349', '2021-01-21 12:17:54.372349');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:17:54.372399', '2021-01-21 12:17:54.372399');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:17:54.372399', '2021-01-21 12:17:54.372399')[0m
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTRANSACTION (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 57987232], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 815257548], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+RestaurantsTest: test_visiting_the_index
+----------------------------------------
+Started GET "/[" for 127.0.0.1 at 2021-01-21 13:17:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/["):
+  
+Started GET "/restaurants" for 127.0.0.1 at 2021-01-21 13:17:59 +0100
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 573)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 757)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.6ms | Allocations: 2721)
+Started GET "/rails/info/routes?path=dish" for 127.0.0.1 at 2021-01-21 13:18:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/rails/info/routes"):
+  
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (8.3ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:19:11.791696', '2021-01-21 12:19:11.791696');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:19:11.791696', '2021-01-21 12:19:11.791696');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:19:11.793369', '2021-01-21 12:19:11.793369');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:19:11.793369', '2021-01-21 12:19:11.793369')[0m
+  [1m[36mFixtures Load (5175.8ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:19:11.802944', '2021-01-21 12:19:11.802944');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:19:11.802944', '2021-01-21 12:19:11.802944');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:19:11.802985', '2021-01-21 12:19:11.802985');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:19:11.802985', '2021-01-21 12:19:11.802985')[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+Started GET "/restaurants/1/dishes" for 127.0.0.1 at 2021-01-21 13:19:21 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for DishesController
+Did you mean?  destroy
+               create):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:92:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/urlmap.rb:74:in `block in call'
+rack (2.2.3) lib/rack/urlmap.rb:58:in `each'
+rack (2.2.3) lib/rack/urlmap.rb:58:in `call'
+rack (2.2.3) lib/rack/builder.rb:244:in `call'
+capybara (3.34.0) lib/capybara/server/middleware.rb:60:in `call'
+puma (5.1.1) lib/puma/configuration.rb:246:in `call'
+puma (5.1.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.1.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.1.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.1.1) lib/puma/server.rb:431:in `process_client'
+puma (5.1.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:19:54.261889', '2021-01-21 12:19:54.261889');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:19:54.261889', '2021-01-21 12:19:54.261889');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:19:54.264093', '2021-01-21 12:19:54.264093');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:19:54.264093', '2021-01-21 12:19:54.264093')[0m
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+Started GET "/restaurants/1/dishes" for 127.0.0.1 at 2021-01-21 13:19:58 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for DishesController
+Did you mean?  destroy
+               create):
+  
+actionpack (6.1.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:92:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+rack (2.2.3) lib/rack/urlmap.rb:74:in `block in call'
+rack (2.2.3) lib/rack/urlmap.rb:58:in `each'
+rack (2.2.3) lib/rack/urlmap.rb:58:in `call'
+rack (2.2.3) lib/rack/builder.rb:244:in `call'
+capybara (3.34.0) lib/capybara/server/middleware.rb:60:in `call'
+puma (5.1.1) lib/puma/configuration.rb:246:in `call'
+puma (5.1.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.1.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.1.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.1.1) lib/puma/server.rb:431:in `process_client'
+puma (5.1.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.9ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:20:14.210060', '2021-01-21 12:20:14.210060');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:20:14.210060', '2021-01-21 12:20:14.210060');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:20:14.212119', '2021-01-21 12:20:14.212119');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:20:14.212119', '2021-01-21 12:20:14.212119')[0m
+  [1m[36mTRANSACTION (14.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:21:02.787264', '2021-01-21 12:21:02.787264');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:21:02.787264', '2021-01-21 12:21:02.787264');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:21:02.789257', '2021-01-21 12:21:02.789257');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:21:02.789257', '2021-01-21 12:21:02.789257')[0m
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (1.1ms)[0m  [1m[31mDELETE FROM "dishes";
+DELETE FROM "restaurants";
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (676290366, 'Burger', 9.0, 108443486, '2021-01-21 12:21:30.791218', '2021-01-21 12:21:30.791218');
+INSERT INTO "dishes" ("id", "name", "price", "restaurant_id", "created_at", "updated_at") VALUES (476720941, 'Makis Fromage', 4.5, 881706322, '2021-01-21 12:21:30.791218', '2021-01-21 12:21:30.791218');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (57987232, 'Sushi World', '12 Rue du Japon', 4.5, '2021-01-21 12:21:30.792766', '2021-01-21 12:21:30.792766');
+INSERT INTO "restaurants" ("id", "name", "address", "rate", "created_at", "updated_at") VALUES (815257548, 'Super Pizza', '12 Rue du Fromage', 4.0, '2021-01-21 12:21:30.792766', '2021-01-21 12:21:30.792766')[0m
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (2.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+RestaurantsTest: test_visiting_the_show
+---------------------------------------
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 57987232], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 815257548], ["LIMIT", 1]]
+Started GET "/[" for 127.0.0.1 at 2021-01-21 13:21:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/["):
+  
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

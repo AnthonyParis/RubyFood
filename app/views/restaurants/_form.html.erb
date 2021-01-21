@@ -1,0 +1,44 @@
+<%= simple_form_for @restaurant do |form| %>
+    <div class="form-group">
+        <div class="my-5">
+            <p> <%= form.label :name %> </p>
+            <%= form.text_field :name, class: "form-control" %>
+            <% @restaurant.errors.full_messages_for(:name).each do |message| %>
+                <p class="text-danger">
+                    <%= message %>
+                </p>
+            <% end %>
+        </div>
+        <div class="my-5">
+            <p> <%= form.label :address %> </p>
+            <%= form.text_field :address, class: "form-control" %>
+            <% @restaurant.errors.full_messages_for(:address).each do |message| %>
+                <p class="text-danger">
+                    <%= message %>
+                </p>
+            <% end %>
+        </div>
+        <div class="my-5">
+            <p> <%= form.label :rate %> </p>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"> /5 </div>
+                </div>
+                <%= form.number_field :rate, class: "form-control", min: 0, max: 5, step: 0.1 %>
+            </div>
+            <% @restaurant.errors.full_messages_for(:rate).each do |message| %>
+                <p class="text-danger">
+                    <%= message %>
+                </p>
+            <% end %>
+        </div>
+        <div class="my-5">
+            <p> <%= form.label :photo %> </p>
+            <%= form.input :photo, as: :file, label: false, class: "form-control" %>
+        </div>
+
+        <div class="my-5">
+            <%= form.submit :class => "btn btn-outline-warning w-100" %>
+        </div>
+    </div>
+<% end %>

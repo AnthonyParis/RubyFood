@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+SushiWorld:
+  name: Sushi World
+  address: 12 Rue du Japon
+  rate: 4.5
+
+SuperPizza:
+  name: Super Pizza
+  address: 12 Rue du Fromage
+  rate: 4.0

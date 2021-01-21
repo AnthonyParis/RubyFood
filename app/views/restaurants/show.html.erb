@@ -1,0 +1,77 @@
+<article class="container py-5">
+    <h1 class="my-5 text-center"> Show Restaurant </h1>
+
+    <div class="my-5 text-center">
+        <h3> <%= @restaurant.name %> </h3>
+        <p> <%= @restaurant.address + " (" + @restaurant.rate.to_s %>) </p>
+        <p> <%= cl_image_tag @restaurant.photo.key if @restaurant.photo.attached? %> </p>
+    </div>
+
+    <div class="d-flex justify-content-around">
+        <%= link_to "Edit", edit_restaurant_path(@restaurant), class: "btn btn-outline-warning w-25" %>
+        <%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Delete ?" }, class: "btn btn-outline-danger w-25" %>
+        <%= link_to "Back", restaurants_path(), class: "btn btn-outline-primary w-25" %>
+    </div>
+
+    <h3 class="my-5 text-center"> All Dishes </h3>
+
+    <div class="row">
+        <% @restaurant.dish.each do |dish| %>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card my-5">
+                    <div class="card-header text-center p-5">
+                        <h5 class="card-title"> <%= dish.name + " (" + dish.price.to_s + "€)" %></h5>
+                        <%= link_to "Delete", [ dish.restaurant, dish ], method: :delete, data: { confirm: "Delete ?" }, class: "btn btn-outline-danger w-50" %>
+                    </div>
+                    <% if dish.photo.attached? %>
+                         <%= cl_image_tag dish.photo.key %>
+                         <img class="card-img-bottom"/>
+                    <!--<img class="card-img-bottom" src="https://images8.alphacoders.com/644/thumb-1920-644361.jpg" alt="<%= dish.name %>"/>-->
+                    <% elsif dish.name == "Makis Saumon" %>
+                        <img class="card-img-bottom" src="https://www.atelierdeschefs.com/media/recette-d12507-maki-de-saumon-marine-a-la-biere-de-noel-et-creme-de-raifort.jpg" alt="<%= dish.name %>"/>
+                    <%elsif dish.name == "Makis Avocat" %>
+                        <img class="card-img-bottom" src="https://www.atelierdeschefs.com/media/recette-e6171-maki-de-langoustines-avocat-et-sesame.jpg" alt="<%= dish.name %>"/>
+                    <% elsif dish.name.start_with?("Makis") %>
+                        <img class="card-img-bottom" src="https://www.atelierdeschefs.com/media/recette-e25416-maki-thon-concombre.jpg" alt="<%= dish.name %>"/>
+                    <% elsif dish.name.start_with?("Pizza") %>
+                        <img class="card-img-bottom" src="https://images8.alphacoders.com/644/thumb-1920-644361.jpg" alt="<%= dish.name %>"/>
+                    <% elsif dish.name.start_with?("Burger") %>
+                        <img class="card-img-bottom" src="https://www.atelierdeschefs.com/media/recette-e20290-burger-de-b-uf-a-la-mozzarella-oignons-nouveaux-caramelises-et-pommes-grenailles.jpg" alt="<%= dish.name %>"/>
+                    <% elsif dish.name.start_with?("K'SDAL") %>
+                        <img class="card-img-bottom" src="https://cdn.shopify.com/s/files/1/0095/0632/4559/products/ksdall-grille-778343_600x.jpg?v=1587566198" alt="<%= dish.name %>"/>
+                    <% else %>
+                        <img class="card-img-bottom" src="https://images8.alphacoders.com/644/thumb-1920-644361.jpg" alt="<%= dish.name %>"/>
+                    <% end %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+    <h3 class="my-5 text-center"> New Dish </h3>
+
+    <%= simple_form_for [ @restaurant, @restaurant.dish.build ] do |form| %>
+        <div class="form-group">
+            <div class="my-5">
+                <p> <%= form.label :name %> </p>
+                <%= form.text_field :name, class: "form-control" %>
+            </div>
+            <div class="my-5">
+                <p> <%= form.label :price %> </p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"> € </div>
+                    </div>
+                    <%= form.number_field :price, class: "form-control", min: 0, max: 99, step: 0.01 %>
+                </div>
+            </div>
+            <div class="my-5">
+            <p> <%= form.label :photo %> </p>
+                <%= form.input :photo, as: :file, label: false, class: "form-control" %>
+            </div>
+
+            <div class="my-5">
+                <%= form.submit :class => "btn btn-outline-primary w-100" %>
+            </div>
+        </div>
+    <% end %>
+</article>
