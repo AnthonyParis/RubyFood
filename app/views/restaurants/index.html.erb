@@ -1,0 +1,22 @@
+<article class="container py-5">
+    <h1 class="my-5 text-center">All Restaurants</h1>
+
+    <div class="input-group my-5">
+        <div class="input-group-prepend w-25">
+            <button id="restaurantButton" class="btn btn-outline-primary w-100"> Search </button>
+        </div>
+        <input id="restaurantSearch" class="form-control" placeholder="Search a Restaurant"/>
+    </div>
+
+    <table id="restaurantResults" class="table">
+        <% @restaurants.each do |restaurant| %>
+            <tr>
+                <td> <%= restaurant.name %> </td>
+                <td> <%= restaurant.rate %>/5 </td>
+                <td> <%= link_to "Show", restaurant_path(restaurant) %> </td>
+            </tr>
+        <% end %>
+    </table>
+
+    <%= link_to "New", new_restaurant_path, class: "btn btn-outline-primary w-100" %>
+</article>
