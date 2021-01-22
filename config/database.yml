@@ -30,7 +30,7 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
-development:
+default:
   adapter: postgresql
   encoding: utf8
   host: ec2-3-251-0-202.eu-west-1.compute.amazonaws.com
@@ -40,6 +40,18 @@ development:
   database: dabe3u2ps8e88
   username: ryedomsttgtqne
   password: 75b69dd73877649e2935e1c4ebe69c8452f7072d6506b5ab39534d3fa2a29ae5
+  uri: postgres://ryedomsttgtqne:75b69dd73877649e2935e1c4ebe69c8452f7072d6506b5ab39534d3fa2a29ae5@ec2-3-251-0-202.eu-west-1.compute.amazonaws.com:5432/dabe3u2ps8e88
+  pool: 5
+  timeout: 5000
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  host: ec2-3-251-0-202.eu-west-1.compute.amazonaws.com
+  #database: rubyfood_dev  #can be anything unique
+  #username: postgres
+  #password: root
+  database: dabe3u2ps8e88
   uri: postgres://ryedomsttgtqne:75b69dd73877649e2935e1c4ebe69c8452f7072d6506b5ab39534d3fa2a29ae5@ec2-3-251-0-202.eu-west-1.compute.amazonaws.com:5432/dabe3u2ps8e88
   pool: 5
   timeout: 5000
@@ -55,8 +67,12 @@ test:
 
 production:
   adapter: postgresql
-  database: rubyfood_prod   #can be anything unique
-  username: postgres
-  password: root
+  encoding: utf8
+  host: ec2-3-251-0-202.eu-west-1.compute.amazonaws.com
+  #database: rubyfood_dev  #can be anything unique
+  #username: postgres
+  #password: root
+  database: dabe3u2ps8e88
+  uri: postgres://ryedomsttgtqne:75b69dd73877649e2935e1c4ebe69c8452f7072d6506b5ab39534d3fa2a29ae5@ec2-3-251-0-202.eu-west-1.compute.amazonaws.com:5432/dabe3u2ps8e88
   pool: 5
   timeout: 5000
