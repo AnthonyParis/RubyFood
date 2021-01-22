@@ -92,13 +92,13 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  host: ec2-3-251-0-202.eu-west-1.compute.amazonaws.com
+  host: ec2-34-246-141-162.eu-west-1.compute.amazonaws.com
   #database: rubyfood_dev  #can be anything unique
   #username: postgres
   #password: root
-  database: dabe3u2ps8e88
-  username: ryedomsttgtqne
-  password: 75b69dd73877649e2935e1c4ebe69c8452f7072d6506b5ab39534d3fa2a29ae5
-  uri: postgres://ryedomsttgtqne:75b69dd73877649e2935e1c4ebe69c8452f7072d6506b5ab39534d3fa2a29ae5@ec2-3-251-0-202.eu-west-1.compute.amazonaws.com:5432/dabe3u2ps8e88
+  database: ddpcas1di2s74c
+  username: hagtsfncjegpdt
+  password: aee18c4eaa2ae604ff8363dc182c87eda50462d0abd5a41473f015eb40bbf1bd
+  uri: postgres://hagtsfncjegpdt:aee18c4eaa2ae604ff8363dc182c87eda50462d0abd5a41473f015eb40bbf1bd@ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/ddpcas1di2s74c
   pool: 5
   timeout: 5000
