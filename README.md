@@ -33,6 +33,12 @@ Pour commencer à utiliser l'application, vous devrez ensuite ouvrir votre navig
 
 > http://127.0.0.1:3000
 
+
+#### DIAGRAMME DECRIVANT LES DIFFERENTES TABLES
+
+[![descripion tables](./Diagramme.png)]
+
+
 ### UTILISATION
 
 L'application se veut très simple d'utilisation, pour être accessible à la majorité des utilisateurs. Au lancement, vous arriverez sur la page d'accueil, et verrez la liste de tous les restaurants. Vous avez la possibilité de rechercher un restaurant spécifique via la barre de recherche, ou de créer un nouveau restaurant via le bouton en bas de liste.
