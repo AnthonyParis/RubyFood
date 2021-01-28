@@ -6,6 +6,7 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
+#Use cloudinary to insert data in cloudinary database
 cloudinary:
   service: Cloudinary
 

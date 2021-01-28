@@ -1,10 +1,19 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# Version of Ruby
 ruby '2.7.2'
+
+# Use devise to generate form for Users
 gem 'devise'
+
+# Use pundit to manage the policy management of restaurants and dishes by authorizing users
 gem 'pundit'
+
+# Use simple_form to create easy forms
 gem 'simple_form'
+
+# Use cloudinary to manage picture management in the cloudinary cloud
 gem 'cloudinary'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -36,6 +45,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
+  # use dotenv-rails to autoload dotenv in Rails
   gem 'dotenv-rails'
 end
 
@@ -54,6 +64,8 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 
+  # Launchy is helper class for launching cross-platform applications in a fire and forget manner
+  # its use to do some test
   gem 'launchy'
 end
 
