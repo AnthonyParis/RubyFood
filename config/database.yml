@@ -99,6 +99,5 @@ production:
   database: ddpcas1di2s74c
   username: hagtsfncjegpdt
   password: aee18c4eaa2ae604ff8363dc182c87eda50462d0abd5a41473f015eb40bbf1bd
-  uri: postgres://hagtsfncjegpdt:aee18c4eaa2ae604ff8363dc182c87eda50462d0abd5a41473f015eb40bbf1bd@ec2-34-246-141-162.eu-west-1.compute.amazonaws.com:5432/ddpcas1di2s74c
   pool: 5
   timeout: 5000
