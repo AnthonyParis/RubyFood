@@ -11,6 +11,22 @@
   </head>
 
   <body>
+    <%= link_to 'back', restaurants_path %>
     <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
   </body>
 </html>
