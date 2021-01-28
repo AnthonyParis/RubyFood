@@ -3,11 +3,33 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
-body {
-background: url( asset-path('ROP.jpeg')) no-repeat center center;
-background-size: 100% 100%;
+.img {
+background: image-url('ROP.jpeg') no-repeat center center;
+background-size: cover;
 height: 100%;
 width: 100%;
 background-color: rgba(255, 255, 255, 0.9);
 background-blend-mode: lighten;
+}
+
+body {
+background-image: image-url('restaurant-oursin-paris.jpeg') no-repeat center center;
+background-size: cover;
+height: 100%;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.9);
+background-blend-mode: lighten;
+}
+
+body {
+background: image-url('ROP.jpeg') no-repeat center center;
+background-size: cover;
+height: 100%;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.9);
+background-blend-mode: lighten;
+}
+
+body{
+	background-image: url("assets/ROP.jpeg");
 }

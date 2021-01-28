@@ -20,7 +20,6 @@
 
             for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
         })
-
         if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
             let dishes = document.querySelector("#dishesResults")
             let search = document.querySelector("#dishesSearch").value.toUpperCase()
