@@ -11094,3 +11094,2407 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 50ms (Views: 42.1ms | ActiveRecord: 2.5ms | Allocations: 6865)
 
 
+Started GET "/restaurants" for ::1 at 2021-01-28 14:59:45 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 4764)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 361.1ms | Allocations: 58256)
+Completed 200 OK in 413ms (Views: 362.5ms | ActiveRecord: 12.9ms | Allocations: 71104)
+
+
+Started GET "/images/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 14:59:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 14:59:48 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 5134)
+Completed 200 OK in 44ms (Views: 36.6ms | ActiveRecord: 2.1ms | Allocations: 6946)
+
+
+Started GET "/images/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 14:59:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:07:23 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 128.5ms | Allocations: 39788)
+Completed 200 OK in 222ms (Views: 132.0ms | ActiveRecord: 9.8ms | Allocations: 45697)
+
+
+Started GET "/images/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 15:07:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:07:59 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 6307)
+Completed 200 OK in 50ms (Views: 42.5ms | ActiveRecord: 1.5ms | Allocations: 8828)
+
+
+Started GET "/images/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 15:07:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:08:01 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 5907)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 1.5ms | Allocations: 7632)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:08:01 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 5898)
+Completed 200 OK in 41ms (Views: 35.1ms | ActiveRecord: 1.4ms | Allocations: 7620)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:09:14 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2339)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.6ms | Allocations: 4846)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag("ROP.jpeg"), :class => "image" %>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag("ROP.jpeg"), :class => "image" %>
+16:        <%= yield %>
+17:        <script>
+18:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+19:                let restaurants = document.querySelector("#restaurantResults").children[0]
+20:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+21:    
+22:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+23:            })
+24:    
+25:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+26:                let dishes = document.querySelector("#dishesResults")
+27:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+28:    
+29:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+30:            })
+31:        </script>
+32:      </body>
+33:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:10:36 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2343)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.6ms | Allocations: 4821)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag("ROP.jpeg"), style: 'no-repeat center center;
+background-size: cover;
+height: 100%;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.9);
+background-blend-mode: lighten; '%>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag("ROP.jpeg"), style: 'no-repeat center center;
+16:    background-size: cover;
+17:    height: 100%;
+18:    width: 100%;
+19:    background-color: rgba(255, 255, 255, 0.9);
+20:    background-blend-mode: lighten; '%>
+21:        <%= yield %>
+22:        <script>
+23:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+24:                let restaurants = document.querySelector("#restaurantResults").children[0]
+25:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+26:    
+27:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+28:            })
+29:    
+30:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+31:                let dishes = document.querySelector("#dishesResults")
+32:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+33:    
+34:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+35:            })
+36:        </script>
+37:      </body>
+38:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:11:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2338)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.4ms | Allocations: 4813)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag("ROP.jpeg"), style: 'image-url("ROP.jpeg") no-repeat center center; background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;'%>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag("ROP.jpeg"), style: 'image-url("ROP.jpeg") no-repeat center center; background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;'%>
+16:        <%= yield %>
+17:        <script>
+18:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+19:                let restaurants = document.querySelector("#restaurantResults").children[0]
+20:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+21:    
+22:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+23:            })
+24:    
+25:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+26:                let dishes = document.querySelector("#dishesResults")
+27:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+28:    
+29:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+30:            })
+31:        </script>
+32:      </body>
+33:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:11:41 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2339)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.6ms | Allocations: 4839)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag("ROP.jpeg"), style: 'background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;'%>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag("ROP.jpeg"), style: 'background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;'%>
+16:        <%= yield %>
+17:        <script>
+18:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+19:                let restaurants = document.querySelector("#restaurantResults").children[0]
+20:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+21:    
+22:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+23:            })
+24:    
+25:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+26:                let dishes = document.querySelector("#dishesResults")
+27:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+28:    
+29:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+30:            })
+31:        </script>
+32:      </body>
+33:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:12:50 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2349)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.1ms | Allocations: 4824)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag("ROP.jpeg"), style:'background-size: cover';' height: 100%';' width: 100%';' background-color: rgba(255, 255, 255, 0.9)';' background-blend-mode: lighten;' %>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag("ROP.jpeg"), style:'background-size: cover';' height: 100%';' width: 100%';' background-color: rgba(255, 255, 255, 0.9)';' background-blend-mode: lighten;' %>
+16:        <%= yield %>
+17:        <script>
+18:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+19:                let restaurants = document.querySelector("#restaurantResults").children[0]
+20:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+21:    
+22:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+23:            })
+24:    
+25:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+26:                let dishes = document.querySelector("#dishesResults")
+27:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+28:    
+29:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+30:            })
+31:        </script>
+32:      </body>
+33:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:13:01 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 43183)
+Completed 200 OK in 136ms (Views: 129.4ms | ActiveRecord: 1.8ms | Allocations: 45707)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:13:52 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2341)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.7ms | Allocations: 4817)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag("ROP.jpeg"), :style => 'background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;' %>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag("ROP.jpeg"), :style => 'background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;' %>
+16:        <%= yield %>
+17:        <script>
+18:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+19:                let restaurants = document.querySelector("#restaurantResults").children[0]
+20:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+21:    
+22:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+23:            })
+24:    
+25:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+26:                let dishes = document.querySelector("#dishesResults")
+27:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+28:    
+29:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+30:            })
+31:        </script>
+32:      </body>
+33:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected ',', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:14:16 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 6313)
+Completed 200 OK in 47ms (Views: 40.5ms | ActiveRecord: 1.6ms | Allocations: 8837)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:14:52 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 6306)
+Completed 200 OK in 47ms (Views: 41.1ms | ActiveRecord: 1.5ms | Allocations: 8825)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:14:54 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 5907)
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 1.4ms | Allocations: 7630)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:10 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 6310)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 1.5ms | Allocations: 8829)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:11 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 5909)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 1.5ms | Allocations: 7632)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:11 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 5900)
+Completed 200 OK in 44ms (Views: 38.1ms | ActiveRecord: 2.0ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:11 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 5900)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 1.8ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:11 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 5900)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 1.6ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:12 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 5900)
+Completed 200 OK in 40ms (Views: 33.8ms | ActiveRecord: 1.5ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:29 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 6317)
+Completed 200 OK in 50ms (Views: 42.6ms | ActiveRecord: 1.5ms | Allocations: 8842)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:30 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 5906)
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 1.3ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:30 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 8257)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 1.5ms | Allocations: 9979)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:30 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 5900)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 2.0ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:15:31 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 5908)
+Completed 200 OK in 66ms (Views: 59.8ms | ActiveRecord: 1.4ms | Allocations: 7630)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:16:48 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2341)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.6ms | Allocations: 4817)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyFood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <br><br>
+    <%= image_tag "ROP.jpeg", options ={ ' background: no-repeat center center; background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;'} %>
+    <%= yield %>
+    <script>
+        if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+            let restaurants = document.querySelector("#restaurantResults").children[0]
+            let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+
+            for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+        })
+
+        if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+            let dishes = document.querySelector("#dishesResults")
+            let search = document.querySelector("#dishesSearch").value.toUpperCase()
+
+            for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+        })
+    </script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>RubyFood</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <br><br>
+15:        <%= image_tag "ROP.jpeg", options ={ ' background: no-repeat center center; background-size: cover; height: 100%; width: 100%; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;'} %>
+16:        <%= yield %>
+17:        <script>
+18:            if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+19:                let restaurants = document.querySelector("#restaurantResults").children[0]
+20:                let search = document.querySelector("#restaurantSearch").value.toUpperCase()
+21:    
+22:                for(const i of Array(restaurants.childElementCount).keys()) restaurants.children[i].hidden = !restaurants.children[i].children[0].innerHTML.toUpperCase().includes(search)
+23:            })
+24:    
+25:            if(document.querySelector("#dishesButton")) document.querySelector("#dishesButton").addEventListener("click", () => {
+26:                let dishes = document.querySelector("#dishesResults")
+27:                let search = document.querySelector("#dishesSearch").value.toUpperCase()
+28:    
+29:                for(const i of Array(dishes.childElementCount).keys()) dishes.children[i].hidden = !dishes.children[i].children[0].children[0].children[0].innerHTML.toUpperCase().includes(search)
+30:            })
+31:        </script>
+32:      </body>
+33:    </html>
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:15: syntax error, unexpected '}', expecting =>
+app/views/layouts/application.html.erb:36: syntax error, unexpected `end', expecting ')'
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:04 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 6306)
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 1.5ms | Allocations: 8830)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 6305)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 1.5ms | Allocations: 8824)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:43 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 5906)
+Completed 200 OK in 43ms (Views: 37.7ms | ActiveRecord: 1.4ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:43 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 5901)
+Completed 200 OK in 44ms (Views: 37.4ms | ActiveRecord: 1.7ms | Allocations: 7623)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:44 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 5904)
+Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 1.3ms | Allocations: 7626)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:44 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 5903)
+Completed 200 OK in 42ms (Views: 36.5ms | ActiveRecord: 1.5ms | Allocations: 7635)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:17:44 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 5900)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 1.6ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:18:45 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 10185)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.4ms | Allocations: 12660)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `style' for #<ActionView::Base:0x0000000000f0c8>):
+    12: 
+    13:   <body>
+    14:     <br><br>
+    15:     <%= image_tag("ROP.jpeg", style => "background-size: cover;") %>
+    16:     <%= yield %>
+    17:     <script>
+    18:         if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+  
+app/views/layouts/application.html.erb:15
+Started GET "/restaurants" for ::1 at 2021-01-28 15:18:58 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 7660)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.5ms | Allocations: 10134)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "background-size: cover;":String):
+    12: 
+    13:   <body>
+    14:     <br><br>
+    15:     <%= image_tag("ROP.jpeg", style="background-size: cover;") %>
+    16:     <%= yield %>
+    17:     <script>
+    18:         if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+  
+app/views/layouts/application.html.erb:15
+Started GET "/restaurants" for ::1 at 2021-01-28 15:19:25 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 7657)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.4ms | Allocations: 10131)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "background-size: cover;":String):
+    12: 
+    13:   <body>
+    14:     <br><br>
+    15:     <%= image_tag "ROP.jpeg", style="background-size: cover;" %>
+    16:     <%= yield %>
+    17:     <script>
+    18:         if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+  
+app/views/layouts/application.html.erb:15
+Started GET "/restaurants" for ::1 at 2021-01-28 15:19:41 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 7657)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.7ms | Allocations: 10131)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "":String):
+    12: 
+    13:   <body>
+    14:     <br><br>
+    15:     <%= image_tag "ROP.jpeg", style="" %>
+    16:     <%= yield %>
+    17:     <script>
+    18:         if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+  
+app/views/layouts/application.html.erb:15
+Started GET "/restaurants" for ::1 at 2021-01-28 15:19:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 7261)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.4ms | Allocations: 8933)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "":String):
+    12: 
+    13:   <body>
+    14:     <br><br>
+    15:     <%= image_tag "ROP.jpeg", style="" %>
+    16:     <%= yield %>
+    17:     <script>
+    18:         if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+  
+app/views/layouts/application.html.erb:15
+Started GET "/restaurants" for ::1 at 2021-01-28 15:19:51 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 10177)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.6ms | Allocations: 12651)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `style' for #<ActionView::Base:0x00000000010590>):
+    12: 
+    13:   <body>
+    14:     <br><br>
+    15:     <%= image_tag "ROP.jpeg", style %>
+    16:     <%= yield %>
+    17:     <script>
+    18:         if(document.querySelector("#restaurantButton")) document.querySelector("#restaurantButton").addEventListener("click", () => {
+  
+app/views/layouts/application.html.erb:15
+Started GET "/restaurants" for ::1 at 2021-01-28 15:20:40 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 6312)
+Completed 200 OK in 47ms (Views: 40.0ms | ActiveRecord: 1.5ms | Allocations: 8836)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:20:41 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 5906)
+Completed 200 OK in 42ms (Views: 35.6ms | ActiveRecord: 1.4ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:20:54 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 6305)
+Completed 200 OK in 46ms (Views: 39.9ms | ActiveRecord: 1.5ms | Allocations: 8824)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:21:24 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 6309)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 1.8ms | Allocations: 8828)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:21:48 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 6311)
+Completed 200 OK in 48ms (Views: 41.2ms | ActiveRecord: 1.5ms | Allocations: 8836)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:21:49 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 5906)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 1.3ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:21:50 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 5900)
+Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 1.6ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:21:58 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 6313)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 1.6ms | Allocations: 8838)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:22:13 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 6306)
+Completed 200 OK in 48ms (Views: 40.9ms | ActiveRecord: 1.9ms | Allocations: 8825)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:22:31 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 6306)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 1.5ms | Allocations: 8825)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:22:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 5910)
+Completed 200 OK in 42ms (Views: 35.6ms | ActiveRecord: 1.5ms | Allocations: 7633)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:22:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 8255)
+Completed 200 OK in 46ms (Views: 38.2ms | ActiveRecord: 1.6ms | Allocations: 9977)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:22:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 7324)
+Completed 200 OK in 47ms (Views: 41.7ms | ActiveRecord: 1.4ms | Allocations: 9048)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:22:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 5900)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 1.4ms | Allocations: 7622)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:23:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 6311)
+Completed 200 OK in 49ms (Views: 40.8ms | ActiveRecord: 1.6ms | Allocations: 8836)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:23:43 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 5913)
+Completed 200 OK in 44ms (Views: 38.3ms | ActiveRecord: 2.1ms | Allocations: 7636)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:24:01 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 6307)
+Completed 200 OK in 50ms (Views: 42.5ms | ActiveRecord: 1.4ms | Allocations: 8832)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:24:02 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 5906)
+Completed 200 OK in 41ms (Views: 35.1ms | ActiveRecord: 1.9ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:24:03 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 5907)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 1.6ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:25:07 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 5665)
+Completed 200 OK in 45ms (Views: 37.7ms | ActiveRecord: 1.4ms | Allocations: 8190)
+
+
+Started GET "/public/assets/images/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 15:25:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/public/assets/images/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:25:19 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 5662)
+Completed 200 OK in 48ms (Views: 39.8ms | ActiveRecord: 1.9ms | Allocations: 8186)
+
+
+Started GET "/public/assets/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 15:25:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/public/assets/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:25:19 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 5280)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 1.3ms | Allocations: 7003)
+
+
+Started GET "/public/assets/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 15:25:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/public/assets/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:25:26 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 5661)
+Completed 200 OK in 50ms (Views: 43.4ms | ActiveRecord: 1.6ms | Allocations: 8185)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:25:27 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 5280)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 1.2ms | Allocations: 7002)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:27:21 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 5679)
+Completed 200 OK in 46ms (Views: 40.0ms | ActiveRecord: 1.5ms | Allocations: 8203)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:27:21 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 5277)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 1.6ms | Allocations: 7000)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:27:21 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 5271)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 1.2ms | Allocations: 6993)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:28:36 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 6305)
+Completed 200 OK in 48ms (Views: 40.5ms | ActiveRecord: 1.5ms | Allocations: 8824)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:29:26 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 6305)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 1.6ms | Allocations: 8824)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:29:33 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 6317)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 1.6ms | Allocations: 8842)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:29:59 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 6305)
+Completed 200 OK in 48ms (Views: 40.6ms | ActiveRecord: 1.6ms | Allocations: 8824)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:30:28 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 6311)
+Completed 200 OK in 59ms (Views: 52.8ms | ActiveRecord: 1.5ms | Allocations: 8836)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:30:29 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 5906)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.3ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:30:29 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 8209)
+Completed 200 OK in 44ms (Views: 38.3ms | ActiveRecord: 1.3ms | Allocations: 9934)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:30:29 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 5907)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 1.3ms | Allocations: 7629)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:30:59 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 6309)
+Completed 200 OK in 56ms (Views: 47.2ms | ActiveRecord: 1.7ms | Allocations: 8828)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:31:00 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 5913)
+Completed 200 OK in 46ms (Views: 40.8ms | ActiveRecord: 1.3ms | Allocations: 7636)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:31:31 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 5659)
+Completed 200 OK in 47ms (Views: 40.3ms | ActiveRecord: 1.5ms | Allocations: 8184)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:31:49 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 138.7ms | Allocations: 39122)
+Completed 200 OK in 144ms (Views: 138.6ms | ActiveRecord: 1.3ms | Allocations: 40845)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:31:51 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 5661)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 1.4ms | Allocations: 7383)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:32:00 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 131.5ms | Allocations: 39587)
+Completed 200 OK in 137ms (Views: 131.4ms | ActiveRecord: 1.3ms | Allocations: 41309)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:08 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 122.0ms | Allocations: 41266)
+Completed 200 OK in 128ms (Views: 121.9ms | ActiveRecord: 1.3ms | Allocations: 42988)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/public/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:09 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 5663)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 1.3ms | Allocations: 7384)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:09 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 5658)
+Completed 200 OK in 46ms (Views: 38.9ms | ActiveRecord: 1.7ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:09 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 5658)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 2.0ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:09 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 5665)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.4ms | Allocations: 7387)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:10 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 5665)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 1.6ms | Allocations: 7387)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:20 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.7ms | Allocations: 42651)
+Completed 200 OK in 140ms (Views: 133.7ms | ActiveRecord: 1.6ms | Allocations: 44373)
+
+
+Started GET "/images/public/restaurant-oursin-paris.jpeg" for ::1 at 2021-01-28 15:34:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/images/public/restaurant-oursin-paris.jpeg"):
+  
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:20 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 5665)
+Completed 200 OK in 42ms (Views: 36.2ms | ActiveRecord: 1.6ms | Allocations: 7386)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 140.0ms | Allocations: 39669)
+Completed 200 OK in 146ms (Views: 140.0ms | ActiveRecord: 1.5ms | Allocations: 41391)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:43 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 5658)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 1.3ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:44 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 5658)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 1.3ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:44 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 5691)
+Completed 200 OK in 47ms (Views: 38.4ms | ActiveRecord: 1.7ms | Allocations: 7413)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:34:59 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.4ms | Allocations: 40125)
+Completed 200 OK in 139ms (Views: 133.5ms | ActiveRecord: 1.3ms | Allocations: 41847)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:35:00 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 5662)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 1.3ms | Allocations: 7384)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:21 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 6176)
+Completed 200 OK in 46ms (Views: 40.2ms | ActiveRecord: 1.6ms | Allocations: 7898)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:22 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 5658)
+Completed 200 OK in 39ms (Views: 34.1ms | ActiveRecord: 1.3ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:22 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 5659)
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 1.5ms | Allocations: 7381)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:22 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 5676)
+Completed 200 OK in 42ms (Views: 34.8ms | ActiveRecord: 1.9ms | Allocations: 7398)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:22 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 5659)
+Completed 200 OK in 47ms (Views: 40.5ms | ActiveRecord: 1.6ms | Allocations: 7381)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:23 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 5658)
+Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 1.5ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:25 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 5658)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 1.8ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:45 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 5705)
+Completed 200 OK in 43ms (Views: 35.5ms | ActiveRecord: 1.5ms | Allocations: 7427)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:37:46 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 5659)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 1.6ms | Allocations: 7381)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:38:12 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 128.1ms | Allocations: 44037)
+Completed 200 OK in 134ms (Views: 127.9ms | ActiveRecord: 1.9ms | Allocations: 45759)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:38:13 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 5658)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 1.5ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:40:54 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 5699)
+Completed 200 OK in 45ms (Views: 38.3ms | ActiveRecord: 1.6ms | Allocations: 7421)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:43:40 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 142.1ms | Allocations: 45486)
+Completed 200 OK in 153ms (Views: 145.5ms | ActiveRecord: 1.6ms | Allocations: 48011)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:43:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 5665)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 1.3ms | Allocations: 7388)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:43:57 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 6049)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 1.6ms | Allocations: 8574)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:43:58 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 5665)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 1.6ms | Allocations: 7388)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:13 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 6048)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 1.9ms | Allocations: 8567)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:13 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 5667)
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 1.3ms | Allocations: 7390)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:14 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 5659)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 1.4ms | Allocations: 7381)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:14 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 5658)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 1.4ms | Allocations: 7380)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:14 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 5665)
+Completed 200 OK in 47ms (Views: 39.5ms | ActiveRecord: 1.6ms | Allocations: 7387)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:31 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.6ms | Allocations: 44956)
+Completed 200 OK in 141ms (Views: 135.9ms | ActiveRecord: 1.5ms | Allocations: 47481)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:32 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 5667)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 1.6ms | Allocations: 7390)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:42 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 44583)
+Completed 200 OK in 131ms (Views: 126.4ms | ActiveRecord: 1.3ms | Allocations: 46305)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:43 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 5659)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 1.5ms | Allocations: 7381)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:52 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 124.7ms | Allocations: 44773)
+Completed 200 OK in 130ms (Views: 124.7ms | ActiveRecord: 1.3ms | Allocations: 46495)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:44:53 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 5665)
+Completed 200 OK in 42ms (Views: 35.5ms | ActiveRecord: 1.8ms | Allocations: 7387)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:45:09 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 5703)
+Completed 200 OK in 41ms (Views: 35.8ms | ActiveRecord: 1.5ms | Allocations: 7425)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:45:11 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 5661)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 1.4ms | Allocations: 7383)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:45:23 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 43644)
+Completed 200 OK in 132ms (Views: 125.6ms | ActiveRecord: 1.6ms | Allocations: 45366)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:45:57 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 127.4ms | Allocations: 45081)
+Completed 200 OK in 134ms (Views: 127.7ms | ActiveRecord: 1.4ms | Allocations: 46803)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:46:00 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 5659)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 1.2ms | Allocations: 7381)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:46:54 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 139.8ms | Allocations: 46571)
+Completed 200 OK in 150ms (Views: 143.6ms | ActiveRecord: 1.6ms | Allocations: 49096)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:46:54 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 6238)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 1.3ms | Allocations: 7961)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:47:16 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 6561)
+Completed 200 OK in 50ms (Views: 42.9ms | ActiveRecord: 1.5ms | Allocations: 9086)
+
+
+Started GET "/restaurants" for ::1 at 2021-01-28 15:51:03 +0100
+Started GET "/restaurants" for ::1 at 2021-01-28 15:51:03 +0100
+Started GET "/restaurants" for ::1 at 2021-01-28 15:51:03 +0100
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 943)
+Started GET "/restaurants" for ::1 at 2021-01-28 15:51:03 +0100
+Processing by RestaurantsController#index as HTML
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 7357)
+Completed 200 OK in 82ms (Views: 64.1ms | ActiveRecord: 5.7ms | Allocations: 9125)
+
+
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (2.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 948)
+Processing by RestaurantsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 11085)
+Completed 200 OK in 52ms (Views: 43.6ms | ActiveRecord: 3.7ms | Allocations: 12825)
+
+
+  [1m[36mRestaurant Load (3.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1819)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 10311)
+Completed 200 OK in 127ms (Views: 42.2ms | ActiveRecord: 16.2ms | Allocations: 25969)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:12
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1405)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 6148)
+Completed 200 OK in 120ms (Views: 43.0ms | ActiveRecord: 16.2ms | Allocations: 24714)
+
+
