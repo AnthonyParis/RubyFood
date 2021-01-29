@@ -18,8 +18,8 @@ class RestaurantsController < ApplicationController
         authorize @restaurant
         @restaurant.user = current_user
         if @restaurant.save
-            #DishJob.perform_now(@restaurant,current_user)
-            DishJob.perform_later(@restaurant,current_user)
+            DishJob.perform_now(@restaurant,current_user)
+            #DishJob.perform_later(@restaurant,current_user)
             redirect_to @restaurant
         else
             render :new

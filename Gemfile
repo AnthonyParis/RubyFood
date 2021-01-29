@@ -16,10 +16,6 @@ gem 'simple_form'
 # Use cloudinary to manage picture management in the cloudinary cloud
 gem 'cloudinary'
 
-#Use sidekiq to manage asynchronous functions
-gem 'redis'
-gem 'sidekiq', '~> 5.2.8'
-gem 'sidekiq-failures'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
