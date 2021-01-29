@@ -22,7 +22,8 @@ L'application RubyFood a été développée par Anthony Khelil et Sarujan Rajara
  	- Recherche (Restaurants/Plats) : Anthony
  	- Seed : Anthony
  	- Design : Anthony
- 	- Jobs : Sarujan
+ 	- Jobs avec Sidekiq en local: Sarujan
+ 	- Jobs sans Sidekiq en cloud: Sarujan
 
  - Déploiement :
  	- Héroku : Sarujan
