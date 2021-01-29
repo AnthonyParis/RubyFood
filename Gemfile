@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'cloudinary'
 
 #Use sidekiq to manage asynchronous functions
+gem 'redis'
 gem 'sidekiq', '~> 5.2.8'
 gem 'sidekiq-failures'
 
